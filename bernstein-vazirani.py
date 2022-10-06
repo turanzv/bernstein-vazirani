@@ -49,6 +49,9 @@ def bernsteinvazirani(func, n):
         # b XOR res => a * i
         a[j] = int(b != res)
 
+        # reset base bits
+        base_bits = [0 for _ in range(n)]        
+
     return (a, b)
 
 
